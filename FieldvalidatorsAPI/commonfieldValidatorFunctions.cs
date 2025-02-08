@@ -2,15 +2,16 @@ using System;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.DependencyModel.Resolution;
 
-namespace SignInLoginProject.FieldValidatorsAPI
+namespace SignInLoginProject.FieldvalidatorsAPI
 {
-    class CommonFieldValidatorFunctions
-    {
+  
         // Delegate declarations
        public delegate bool RequiredValidDel(string fieldValue);
         public delegate bool PatternMatchValidDel(string fieldValue, string pattern);
         public delegate bool CompareFieldsValidDel(string field1, string field2);
         public delegate bool StringLengthFieldValidDel(string fieldVal, int min, int max);
+          class CommonFieldValidatorFunctions
+    {
 
         // Delegate instances
         private static RequiredValidDel _requiredValidDel = null;
